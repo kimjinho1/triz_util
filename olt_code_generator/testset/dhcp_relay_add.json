@@ -1,0 +1,13 @@
+{
+  "name": "DHCP_RELAY",
+  "add_fields": {
+    "dhcp_relay_yn": "Y",
+    "information_policy": "append",
+    "info_option_yn": "Y",
+    "server_selection": "Y",
+    "verify_mac_address": "Y",
+    "rate_limit_type": "decline",
+    "rate_limit_rate": "11"
+  },
+  "delete_fields": {}
+}

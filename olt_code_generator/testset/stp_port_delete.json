@@ -1,0 +1,20 @@
+{
+  "port_name": "Tp1/4",
+  "name": "SPANNING_TREE",
+  "add_fields": {
+    "enable_yn": "N",
+    "autoedge": "N",
+    "bpdu_filter": "N",
+    "bpdu_guard": "N",
+    "portfast": "N",
+    "edgeport": "N",
+    "restricted_role": "N",
+    "restricted_tcn": "N"
+  },
+  "delete_fields": {
+    "port_priority": false,
+    "path_cost": false,
+    "guard": false,
+    "link_type": false
+  }
+}

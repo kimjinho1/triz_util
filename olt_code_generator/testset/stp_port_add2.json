@@ -1,0 +1,35 @@
+{
+  "name": "SPANNING_TREE",
+  "port_name": "Tp1/4",
+  "add_fields": {
+    "enable_yn": "Y",
+    "autoedge": "Y",
+    "portfast": "Y",
+    "edgeport": "Y",
+    "restricted_role": "Y",
+    "restricted_tcn": "Y",
+    "port_priority": "128",
+    "path_cost": "200",
+    "guard": "loop",
+    "instance": "10",
+    "link_type": "shared"
+  },
+  "delete_fields": {},
+  "commands": [
+    "configure terminal",
+    "interface Tp1/4",
+    "spanning-tree enable",
+    "spanning-tree autoedge",
+    "spanning-tree port-priority 80",
+    "spanning-tree path-cost 200",
+    "spanning-tree link-type shared",
+    "spanning-tree bpdu-guard enable",
+    "spanning-tree bpdu-filter enable",
+    "spanning-tree guard loop",
+    "spanning-tree portfast",
+    "no spanning-tree edgeport",
+    "spanning-tree restricted-role",
+    "spanning-tree restricted-tcn",
+    "end"
+  ]
+}

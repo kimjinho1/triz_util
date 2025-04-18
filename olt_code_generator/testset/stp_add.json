@@ -1,0 +1,41 @@
+{
+  "enable_yn": "Y",
+  "name": "SPANNING_TREE",
+  "add_fields": {
+    "enable_yn": "Y",
+    "stp_mode": "mstp",
+    "loopguard_default": "Y",
+    "mst_configuration": "Y",
+    "priority": "8192",
+    "pathcost_method": "short",
+    "hello_time": "5",
+    "max_age": "30",
+    "max_hops": "30",
+    "forward_time": "20",
+    "portfast": "bpdu-guard",
+    "transmit_holdcount": "5"
+  },
+  "delete_fields": {},
+  "commands": [
+    "configure terminal",
+    "spanning-tree enable",
+    {
+      "command": "spanning-tree mode mstp edge",
+      "expects": [
+        "Array"
+      ]
+    },
+    "y",
+    "spanning-tree priority 8192",
+    "spanning-tree pathcost method short",
+    "spanning-tree portfast bpdu-guard",
+    "spanning-tree hello-time 5",
+    "spanning-tree loopguard default",
+    "spanning-tree forward-time 20",
+    "spanning-tree max-age 30",
+    "spanning-tree max-hops 30",
+    "spanning-tree mst configuration",
+    "spanning-tree transmit-holdcount 5",
+    "end"
+  ]
+}

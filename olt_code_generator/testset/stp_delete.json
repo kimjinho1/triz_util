@@ -1,0 +1,17 @@
+{
+  "name": "SPANNING_TREE",
+  "add_fields": {
+    "enable_yn": "N",
+    "loopguard_default": "N",
+    "mst_configuration": "N"
+  },
+  "delete_fields": {
+    "priority": false,
+    "pathcost_method": false,
+    "max_age": false,
+    "max_hops": false,
+    "forward_time": false,
+    "portfast": false,
+    "transmit_holdcount": false
+  }
+}

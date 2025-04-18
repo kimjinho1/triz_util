@@ -1,0 +1,12 @@
+{
+  "name": "LACP",
+  "add_fields": {
+    "system_priority": "3276"
+  },
+  "delete_fields": {},
+  "commands": [
+    "configure terminal",
+    "lacp system-priority 3276",
+    "end"
+  ]
+}

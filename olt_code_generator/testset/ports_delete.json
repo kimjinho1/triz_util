@@ -1,0 +1,28 @@
+{
+  "name": "INTERFACE_PORT_SETTING",
+  "add_fields": {},
+  "delete_fields": {},
+  "enable_yn": "Y",
+  "interface_list": [
+    {
+      "add_fields": {},
+      "delete_fields": {
+        "mtu_bytes": false,
+        "storm_control_broadcast_rate": false,
+        "storm_control_multicast_rate": false,
+        "storm_control_unicast_rate": false
+      },
+      "port_id": 4,
+      "port_name": "Tp1/4"
+    }
+  ],
+  "commands": [
+    "configure terminal",
+    "interface Tp1/4 ",
+    "no mtu",
+    "no storm-control broadcast level",
+    "no storm-control multicast level",
+    "no storm-control unicast level",
+    "end"
+  ]
+}

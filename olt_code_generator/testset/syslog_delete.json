@@ -1,0 +1,21 @@
+{
+  "name": "SYSLOG",
+  "add_fields": {},
+  "delete_fields": {
+    "syslog_host_ip": [
+      {
+        "syslog_host_ip": "1.1.1.1"
+      },
+      {
+        "syslog_host_ip": "1.1.1.2"
+      }
+    ]
+  },
+  "commands": [
+    "configure terminal",
+    "no logging facility",
+    "no logging trap",
+    "no logging source-address",
+    "end"
+  ]
+}
